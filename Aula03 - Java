@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Aula03 {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Qual a quantidade de pãos vendidos?");
+		int quantidadepaes = sc.nextInt();
+
+		System.out.println("Qual a quantidade de broas vendidas?");
+		int quantidadebroas = sc.nextInt();
+		
+		double arrecadacao = ( quantidadepaes * 0.12) + ( quantidadebroas * 1.50);
+		double poupanca = (arrecadacao * 10) / 100;
+		
+		System.out.println("Valor de arrecadacao : " + arrecadacao);
+		System.out.println("Valor de poupanca : " + poupanca);
+		
+		sc.close();
+	}
+
+}
+
